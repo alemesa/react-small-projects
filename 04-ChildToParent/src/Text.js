@@ -10,11 +10,11 @@ class Text extends React.Component {
     const styles1 = {
       fontFamily: 'sans-serif',
       textAlign: 'center',
-      width: `${this.props.shrink ? '0' : '50vw'}`,
-      //width: `${this.state.width}vw`,
+      width: '50vw',
       height: '50vh',
+      position: 'absolute',
       backgroundColor: 'red',
-      transition: 'all 1s ease-in'
+      transition: 'all 0.5s ease-in'
     };
 
     return <div style={styles1}>Text</div>;

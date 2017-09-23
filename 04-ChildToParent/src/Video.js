@@ -5,7 +5,8 @@ class Video extends React.Component {
     super(props);
     this.state = {
       width: '50',
-      visible: true
+      visible: true,
+      left:'50'
     };
 
     console.log(this.props.callBack);
@@ -18,14 +19,16 @@ class Video extends React.Component {
     this.props.callBack(true);
     this.setState({
       width: '100',
-      visible: false
+      visible: false,
+      left: '0'
     });
   }
   shrink() {
     this.props.callBack(false);
     this.setState({
       width: '50',
-      visible: true
+      visible: true,
+      left:'50'
     });
   }
 
@@ -34,12 +37,13 @@ class Video extends React.Component {
 
     const styles2 = {
       fontFamily: 'sans-serif',
+      position: 'relative',
       textAlign: 'center',
       width: `${this.state.width}vw`,
       height: '50vh',
-      position: `${this.state.width === '100' ? '' : ''}`,
+      left: `${this.state.left}%`,
       backgroundColor: 'blue',
-      transition: 'all 1s ease-in'
+      transition: 'all 0.5s ease-in'
     };
     return (
       <div style={styles2}>

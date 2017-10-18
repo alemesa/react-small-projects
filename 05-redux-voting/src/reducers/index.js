@@ -27,7 +27,7 @@ export default (state = initialState, action) => {
       });
     case 'VOTE_EMBER':
       return Object.assign({}, state, {
-        ember: state.angular + 1,
+        ember: state.ember + 1,
         total: state.total + 1
       });
     default:

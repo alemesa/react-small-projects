@@ -29,10 +29,22 @@ class App extends Component {
       <div className="App">
         <h2>Favorite Framework?</h2>
         <div className="frameworks">
-          <img src={reactLogo} onClick={this.handleVoteReact} />
-          <img src={angularLogo} onClick={this.handleVoteAngular} />
-          <img src={vueLogo} onClick={this.handleVoteVue} />
-          <img src={emberLogo} onClick={this.handleVoteEmber} />
+          <img
+            src={reactLogo}
+            onClick={this.handleVoteReact}
+            alt="react-logo"
+          />
+          <img
+            src={angularLogo}
+            onClick={this.handleVoteAngular}
+            alt="angular-logo"
+          />
+          <img src={vueLogo} onClick={this.handleVoteVue} alt="vue-logo" />
+          <img
+            src={emberLogo}
+            onClick={this.handleVoteEmber}
+            alt="ember-logo"
+          />
         </div>
       </div>
     );

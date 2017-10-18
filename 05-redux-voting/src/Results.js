@@ -27,7 +27,7 @@ class Results extends Component {
   }
 
   getReactPercentage() {
-    if ((this.store.getState().total && this.store.getState().react) != 0) {
+    if ((this.store.getState().total && this.store.getState().react) !== 0) {
       return (
         Math.round(this.getReactCount() / this.store.getState().total * 100) +
         '%'
@@ -37,7 +37,7 @@ class Results extends Component {
     }
   }
   getAngularPercentage() {
-    if ((this.store.getState().total && this.store.getState().angular) != 0) {
+    if ((this.store.getState().total && this.store.getState().angular) !== 0) {
       return (
         Math.round(this.getAngularCount() / this.store.getState().total * 100) +
         '%'
@@ -47,7 +47,7 @@ class Results extends Component {
     }
   }
   getVuePercentage() {
-    if ((this.store.getState().total && this.store.getState().vue) != 0) {
+    if ((this.store.getState().total && this.store.getState().vue) !== 0) {
       return (
         Math.round(this.getVueCount() / this.store.getState().total * 100) + '%'
       );
@@ -56,7 +56,7 @@ class Results extends Component {
     }
   }
   getEmberPercentage() {
-    if ((this.store.getState().total && this.store.getState().ember) != 0) {
+    if ((this.store.getState().total && this.store.getState().ember) !== 0) {
       return (
         Math.round(this.getEmberCount() / this.store.getState().total * 100) +
         '%'

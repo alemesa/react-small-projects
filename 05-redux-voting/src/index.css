@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Manuale');
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  font-family: 'Manuale', serif;
+}
+
+h2 {
+  font-size: 6rem;
+  text-align: center;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 60vh;
+  padding-top: 2rem;
+}
+
+.frameworks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.Results {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 40vh;
+}
+
+span {
+  font-size: 2rem;
+}
+
+.language-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.label {
+  flex: 1 1 25%;
+}
+
+.progress-bar {
+  flex: 1 1 75%;
+  width: 100%;
+  height: 2.5rem;
+  background-color: #f1efef;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+.progress-bar-inner {
+  transition: 0.2s all ease-in;
+  width: 0%;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.react-bar {
+  background-color: #25d8fd;
+  background: linear-gradient(to right, #25d8fd, #2dc7e6);
+}
+.angular-bar {
+  background-color: #e0353d;
+  background: linear-gradient(to right, #e0353d, #d84950);
+}
+.vue-bar {
+  background-color: #47b784;
+  background: linear-gradient(to right, #47b784, #479e74);
+}
+.ember-bar {
+  background-color: #e26756;
+  background: linear-gradient(to right, #e26756, #bb5649);
+}
+
+img {
+  margin: 0 2rem;
+  width: 10rem;
+  height: 10rem;
+  transition: all 0.2s ease-in;
+}
+
+img:hover {
+  cursor: pointer;
+  transform: scale(1.1) rotate(2deg) translateY(-0.5rem);
+}

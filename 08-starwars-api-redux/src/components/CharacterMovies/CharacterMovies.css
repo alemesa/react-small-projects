@@ -1,0 +1,25 @@
+.CharacterMovies {
+  width: 1200px;
+}
+
+.CharacterMovies ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.CharacterMovies ul div {
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: column;
+  flex: 0 0 40%;
+}
+.CharacterMovies ul div p {
+  margin: 0 auto;
+}
+.CharacterMovies ul div img {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}

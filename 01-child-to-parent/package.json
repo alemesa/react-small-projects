@@ -3,11 +3,11 @@
   "description": null,
   "version": "0.0.0",
   "dependencies": {
-    "react-dom": "15.5.3",
-    "react": "15.5.3"
+    "react-dom": "16.5.2",
+    "react": "16.5.2"
   },
   "devDependencies": {
-    "react-scripts": "1.0.0"
+    "react-scripts": "2.0.4"
   },
   "scripts": {
     "start": "react-scripts start",
